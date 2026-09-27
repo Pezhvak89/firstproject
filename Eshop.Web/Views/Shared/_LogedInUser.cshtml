@@ -1,0 +1,15 @@
+﻿@using System.Security.Claims
+@if (User.Identity.IsAuthenticated)
+{
+    <li><a asp-area="UserPanel" asp-controller="Home" asp-action="Index"  ><i class="fa fa-user-plus"></i> <label>@User.Identity.Name خوش آمدید</label> </a></li>
+    <li><a asp-controller="Account" asp-action="Logout"><i class="fa fa-user"></i> <label>خروج</label> </a></li>
+    @if (User.FindFirstValue("Role")== "1")
+    {
+        <li><a asp-area="AdminPanel" asp-controller="Home" asp-action="Index"><i class="fa fa-user"></i> <label>ادمین</label> </a></li>
+    }
+}
+else
+{
+    <li><a asp-controller="Account" asp-action="Register"><i class="fa fa-user-plus"></i> <label>عضویت</label> </a></li>
+    <li><a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> <label>ورود به سایت</label> </a></li>
+}

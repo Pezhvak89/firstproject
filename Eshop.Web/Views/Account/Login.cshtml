@@ -1,0 +1,34 @@
+﻿@using Eshop.Domain.ViewModels.User
+@model LoginUserViewModel
+@{
+    ViewData["Title"] = "ورود";
+}
+<div class="col-md-9 col-sm-8 left-side-content internal-style">
+
+    <section class="border-radius">
+        <header><h3>@ViewData["Title"]</h3></header>
+        <article>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+
+                <form asp-controller="Account" asp-action="Login" method="post">
+                    @* <input asp-for="UserId" type="hidden"/> *@
+                    @* <input asp-for="RoleId" type="hidden"/> *@
+                    <input type="hidden" asp-for="ReturnUrl">
+                    <div class="form-group">
+                        <input type="email" class="form-control" asp-for="Email" placeholder=" ایمیل ">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" asp-for="Password" placeholder="رمز عبور">
+                    </div>
+                    <label><input type="checkbox" asp-for="Rememberme"> مرا به خاطر بسپار </label>
+                    <input type="submit" value=" ورود ">
+                    <a class="btn btn-warning" asp-controller="Account" asp-action="ForgotPassword">فراموشی کلمه عبور</a>
+                    <div asp-validation-summary="All"></div>
+                </form>
+
+            </div>
+            <div class="clearfix"></div>
+        </article>
+    </section>
+
+</div>

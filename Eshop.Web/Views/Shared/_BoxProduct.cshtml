@@ -1,0 +1,16 @@
+﻿@model Eshop.Domain.Models.Products.Product
+<div class="col-md-4 col-sm-6">
+    <div class="border-radius">
+        <span style="width: 100%">
+            <img style="height: 200px;width: 100%" src="/productImages/@Model.ProductImages.FirstOrDefault()?.ImageName">
+        </span>
+        <h2> <a asp-controller="Product" asp-action="ShowProduct" asp-route-productId="@Model.ProductId">@Model.Title</a> </h2>
+        @* <h6>افزودن به لیست مقایسه <input type="checkbox"></h6> *@
+        <span class="col-md-9 col-sm-9 col-xs-9 price-layer">
+            <label>@Model.Price.ToString("#,0")  تومان</label>
+        </span>
+        <a asp-controller="Product" asp-action="AddToBasket" asp-route-productId="@Model.ProductId" class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 buy-button border-radius">
+            <label><i class="fa fa-shopping-basket"></i></label>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Data.deps.json
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Data.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Data.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.AssemblyInfoInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.AssemblyInfo.cs
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.csproj.CoreCompileInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\refint\Eshop.Data.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\ref\Eshop.Data.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Data.runtimeconfig.json
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\bin\Debug\net8.0\Eshop.Domain.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.csproj.AssemblyReference.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.csproj.Up2Date
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Data\obj\Debug\net8.0\Eshop.Data.genruntimeconfig.cache

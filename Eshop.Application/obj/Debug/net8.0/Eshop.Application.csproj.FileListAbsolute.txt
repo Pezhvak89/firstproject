@@ -1,0 +1,17 @@
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Application.deps.json
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Application.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Application.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.AssemblyInfoInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.AssemblyInfo.cs
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.csproj.CoreCompileInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\refint\Eshop.Application.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\ref\Eshop.Application.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Data.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Data.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\bin\Debug\net8.0\Eshop.Domain.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Application.csproj.AssemblyReference.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Application\obj\Debug\net8.0\Eshop.Ap.E02EDF22.Up2Date

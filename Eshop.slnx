@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="Eshop.Application/Eshop.Application.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="Eshop.Domain/Eshop.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infra.Data/">
+    <Project Path="Eshop.Data/Eshop.Data.csproj" />
+  </Folder>
+  <Folder Name="/Ioc/">
+    <Project Path="Eshop.Ioc/Eshop.Ioc.csproj" />
+  </Folder>
+  <Folder Name="/Presentations/">
+    <Project Path="Eshop.Web/Eshop.Web.csproj" />
+  </Folder>
+</Solution>

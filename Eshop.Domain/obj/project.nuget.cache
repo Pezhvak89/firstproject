@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "uPS8o1M9SNM=",
+  "success": true,
+  "projectFilePath": "D:\\Asp.net Example\\Asp.net Project\\Eshop\\Eshop.Domain\\Eshop.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gls\\.nuget\\packages\\microsoft.aspnetcore.http.features\\6.0.0-preview.4.21253.5\\microsoft.aspnetcore.http.features.6.0.0-preview.4.21253.5.nupkg.sha512",
+    "C:\\Users\\gls\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0-preview.4.21253.7\\microsoft.extensions.primitives.6.0.0-preview.4.21253.7.nupkg.sha512",
+    "C:\\Users\\gls\\.nuget\\packages\\system.io.pipelines\\6.0.0-preview.4.21253.7\\system.io.pipelines.6.0.0-preview.4.21253.7.nupkg.sha512",
+    "C:\\Users\\gls\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0-preview.4.21253.7\\system.runtime.compilerservices.unsafe.6.0.0-preview.4.21253.7.nupkg.sha512"
+  ],
+  "logs": []
+}

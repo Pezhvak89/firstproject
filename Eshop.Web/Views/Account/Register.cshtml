@@ -1,0 +1,29 @@
+﻿@model Eshop.Domain.ViewModels.User.RegisterUserViewModel
+<div class="col-md-9 col-sm-8 left-side-content internal-style">
+
+    <section class="border-radius">
+        <header><h3>ثبت نام </h3></header>
+        <article>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+
+                <form asp-controller="Account" asp-action="Register" method="post">
+                    <div class="form-group">
+                        <input type="email" class="form-control" asp-for="Email" placeholder=" ایمیل ">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" asp-for="Password" placeholder="رمز عبور">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" asp-for="RePassword" placeholder="تکرار رمز عبور ">
+                    </div>
+                    <label><input type="checkbox" asp-for="ConfirmRules"> قوانین را میپذیرم  </label>
+                    <input type="submit" value=" ثبت نام">
+                    <div asp-validation-summary="All"></div>
+                </form>
+
+            </div>
+            <div class="clearfix"></div>
+        </article>
+    </section>
+
+</div>

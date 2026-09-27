@@ -1,0 +1,78 @@
+@using System.Collections.Specialized
+@model IEnumerable<Eshop.Domain.Models.Products.ProductCategory>
+
+@{
+    ViewData["Title"] = "دسته بندی کالاها";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-success" onclick="Create()">دسته بندی جدید</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryTittle)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr id="tr_@item.CategoryId">
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryTittle)
+            </td>
+            <td>
+                <a class="btn btn-warning btn-xs" onclick="Edit(@item.CategoryId)">ویرایش</a> |
+                <a class="btn btn-primary btn-xs" asp-action="Details" asp-route-id="@item.CategoryId">جزیات</a> |
+                <a class="btn btn-danger btn-xs" onclick="Delete(@item.CategoryId)">حذف</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">افزودن گروه جدید</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="bodyModal">
+                ...
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <script>
+        function Create()
+        {
+            $.get("/AdminPanel/ProductCategories/Create",function (res){
+                $("#exampleModal").modal('show');
+                $("#bodyModal").html(res);
+            });
+        }
+        function Edit(id){
+            $.get("/AdminPanel/ProductCategories/Edit/"+id,function (res){
+                $("#exampleModal").modal('show');
+                $("#bodyModal").html(res);
+                $("#exampleModalLabel").html("ویرایش")
+            });
+        }
+        function Delete(id){
+            $.get("/AdminPanel/ProductCategories/Delete/"+id,function (res){
+              $("#tr_"+id).hide('slow');
+            });
+        }
+    </script>
+}
+

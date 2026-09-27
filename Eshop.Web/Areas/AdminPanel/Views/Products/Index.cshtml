@@ -1,0 +1,61 @@
+@model IEnumerable<Eshop.Domain.Models.Products.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            تصویر محصول
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+           دسته
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+           @if (item.ProductImages!= null & item.ProductImages.Any())
+           {
+             <img style="width: 120px" src="/productImages/@item.ProductImages.First().ImageName"/>  
+           }
+           else
+           {
+               <img style="width: 120px" src="/productImages/noimage.jpeg" />
+           }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductCategory.CategoryTittle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <a class="btn btn-success btn-xs" asp-action="Edit" asp-route-id="@item.ProductId">ویرایش</a> |
+            <a class="btn btn-primary btn-xs" asp-action="Details" asp-route-id="@item.ProductId">جزییات</a> |
+            <a class="btn btn-danger btn-xs" asp-action="Delete" asp-route-id="@item.ProductId">حذف</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Eshop.Domain.Models.Basket.OrderDetails>
+<div class="container baskets-style margin-top-20">
+
+            <div class="row basket-style">
+                <section class="border-radius">
+                    <div class="tbl-head">
+                        <ul>
+                            <li> شرح محصول </li>
+                            <li> تعداد و وزن </li>
+                            <li> قیمت واحد </li>
+                            <li> قیمت کل   </li>
+                        </ul>
+                    </div>
+                    <div class="hidden-head">
+                        سبد خرید شما
+                    </div>
+                    <div class="tbl-body">
+                        <!-- Each Row -->
+                        @foreach (var item in Model)
+                        {
+                            <ul>
+                                <li> 
+                                    <a href="" class="product-image"><img class="border-radius" src="/productImages/@item.Product.ProductImages.FirstOrDefault()?.ImageName"></a>
+                                    <div class="product-info-left-side">
+                                        <a asp-area="" asp-controller="Product" asp-action="ShowProduct" asp-route-productId="@item.Product.ProductId" class="product-title"> <h3> @item.Product.Title </h3> </a>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <p> 
+                                        <input type="number" name="points" min="1" max="30" step="1" value="@item.Count"> 
+                                    </p>
+                                </li>
+                                <li> 
+                                    <label class="lbl-hidden"> قیمت واحد : </label> <span class="lbl-price"> @item.Price.ToString("#,0 تومان") </span>
+                                </li>
+                                <li> 
+                                    <label class="lbl-hidden"> قیمت کل : </label> <span class="lbl-price"> @((item.Price*item.Count).ToString("#,0 تومان")) </span>
+
+                                    <a asp-controller="Orders" asp-action="DeleteOrder" asp-route-orderDetailsid="@item.DetailsId"><i class="delete-button">X</i></a>
+                                </li>
+                            </ul>
+                        }
+
+                    </div>
+                    @{
+                        string toPay = @Model.Sum(d => d.Count * d.Price).ToString("#,0 تومان");
+                    }
+                    <div class="tbl-footer">
+                        <ul>
+                            <li> قیمت کل : <span>@toPay </span></li>
+                            <li class="total-price"> مبلغ قابل پرداخت : <span>@toPay </span></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="border-radius submit-basket-button"> پرداخت آنلاین </button>
+                    <div class="clearfix"></div>
+                </section>
+            </div>
+
+        </div>

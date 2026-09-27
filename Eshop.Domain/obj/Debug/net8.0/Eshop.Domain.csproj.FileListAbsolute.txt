@@ -1,0 +1,12 @@
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\bin\Debug\net8.0\Eshop.Domain.deps.json
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\bin\Debug\net8.0\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\bin\Debug\net8.0\Eshop.Domain.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.AssemblyInfoInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.AssemblyInfo.cs
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.csproj.CoreCompileInputs.cache
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\refint\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.pdb
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\ref\Eshop.Domain.dll
+D:\Asp.net Example\Asp.net Project\Eshop\Eshop.Domain\obj\Debug\net8.0\Eshop.Domain.csproj.AssemblyReference.cache

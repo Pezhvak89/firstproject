@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Eshop.Domain.Models.Users.User>
+
+@{
+    ViewData["Title"] = "لیست کاربران";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success btn-sm">کاربر جدید</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <form asp-area="AdminPanel" asp-controller="Users" asp-action="Index" >
+            <th>جستجو:</th>
+            <th><input class="form-control" type="search" name="search" value="@ViewData["search"]"/></th>
+        </form>
+        <th><a class="btn btn-warning btn-sm" asp-controller="Users" asp-action="Index" >حذف فیلترها</a></th>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            نقش کاربر
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+
+        <th>
+
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role.RoleTitle)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDate)
+            </td>
+           
+            <td>
+                <a class="btn btn-warning btn-xs" asp-action="Edit" asp-route-id="@item.UserId">ویرایش</a> |
+                <a class="btn btn-primary btn-xs" asp-action="Details" asp-route-id="@item.UserId">جزییات</a> |
+                <a class="btn btn-danger btn-xs" onclick="ConfirmDelete('/AdminPanel/Users/delete/@item.UserId')">حدف</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@{
+    int pagecount = int.Parse(ViewData["pagecount"].ToString());
+    int pageid = int.Parse(ViewData["pageId"].ToString());
+}
+@if(pagecount>=1)
+
+{
+    <div class="row">
+        <div class="col-sm-6"></div><div class="col-sm-6">
+            <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+                <ul class="pagination">
+                    <li class="paginate_button previous @((pageid == 1) ? "disabled" : "")" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
+                        <a asp-area="AdminPanel" asp-controller="Users" asp-action="Index" asp-route-pageId="@(pageid-1)">Previous</a>
+                    </li>
+                  @for(int i=1;i<=pagecount;i++)
+                    {
+                       
+                        <li class="paginate_button @((pageid == i) ?"active":"")" aria-controls="dataTables-example" tabindex="0">
+                            @* href="/AdminPanel/Users?pageid=@i" *@
+                            <a asp-area="AdminPanel" asp-controller="Users" asp-action="Index" asp-route-pageId="@i">@i</a>
+                        </li>
+                       
+                    }
+                    <li class="paginate_button next @((pageid<=pagecount)?"":"disabled")" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+                        <a asp-area="AdminPanel" asp-controller="Users" asp-action="Index" asp-route-pageId="@(pageid+1)">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+}

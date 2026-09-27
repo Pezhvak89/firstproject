@@ -1,0 +1,9 @@
+﻿@model Eshop.Domain.ViewModels.User.RegisterUserViewModel
+@{
+    ViewData["Title"] = "ثبت نام موفق";
+}
+<div class="alert alert-success">
+    <p>@Model.Email عزیز</p>
+    <p>ثبت نام شما با موفقیت انجام شد</p>
+    <p>میتوانید از این <a asp-controller="Account" asp-action="Login">لینک</a> وارد شوید</p>
+</div>

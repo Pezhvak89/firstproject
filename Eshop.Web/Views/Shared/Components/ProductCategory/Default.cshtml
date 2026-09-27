@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Eshop.Domain.ViewModels.Product.ProductGroupShowViewModel>
+<section class="border-radius category-side">
+                <header><h3> دسته بندی ها </h3></header>
+                <article>
+                    <ul class="category-menu">
+                      @foreach (var item in Model)
+                      {
+                          <li>
+                              <h2><a href="/Group/@item.CategoryTittle/@item.CategoryId">@item.CategoryTittle (@item.ProductCount)</a></h2>
+                          </li>
+                      }
+                       
+                    </ul>
+                </article>
+            </section>
+

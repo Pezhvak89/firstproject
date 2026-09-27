@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.23">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.23">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eshop.Ioc\Eshop.Ioc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Account\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Account\Register.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Account\Success.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Home\Privacy.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Shared\_HeaderRefrences.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Shared\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Shared\_LogedInUser.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Shared\_MetaTags.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Home\ChangePassword.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\UserPanel\Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminPanel\Views\ProductCategories\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminPanel\Views\ProductCategories\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminPanel\Views\ProductCategories\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminPanel\Views\ProductCategories\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\AdminPanel\Views\ProductCategories\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\AdminPanel\Data\" />
+    <Folder Include="Areas\UserPanel\Data\" />
+    <Folder Include="Areas\UserPanel\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Views\Shared\Components\ShopBasket\Default.cshtml" />
+  </ItemGroup>
+
+</Project>
